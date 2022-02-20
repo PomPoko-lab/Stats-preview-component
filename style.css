@@ -85,6 +85,15 @@ div {
   border-bottom-right-radius: 0.5em;
 }
 
+@media (max-width: 375px) {
+  main {
+    flex-direction: column-reverse;
+    width: 370px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .attribution {
   font-size: 11px;
   position: fixed;
