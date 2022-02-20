@@ -26,6 +26,7 @@ main {
 main img {
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
+  height: 100%;
 }
 
 article {
@@ -53,12 +54,16 @@ article > p {
 }
 
 table {
-  border-spacing: 0 1em;
+  border-spacing: 0 0.8em;
 }
 
 table th {
   font-size: 1.5em;
   text-align: left;
+}
+
+th:last-child {
+  text-transform: uppercase;
 }
 
 td {
@@ -69,6 +74,23 @@ td {
 
 span.number {
   font-family: "Inter", sans-serif;
+}
+
+div {
+  position: relative;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: hsl(277, 64%, 61%);
+  mix-blend-mode: multiply;
+  opacity: 70%;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 .attribution {
