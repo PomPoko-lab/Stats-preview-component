@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+}
+
+main {
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  border-radius: 0.5em;
+  width: 1100px;
+}
+
+main img {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+article {
+  padding: 5em 5em 1em 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+h1 > span {
+  color: hsl(277, 64%, 61%);
+}
+
+article > p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  padding: 0 1em 0 0;
+  margin-bottom: 3em;
+}
+
+table {
+  border-spacing: 0 1em;
+}
+
+table th {
+  font-size: 1.5em;
+  text-align: left;
+}
+
+td {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+span.number {
+  font-family: "Inter", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 77%, 71%);
+}
