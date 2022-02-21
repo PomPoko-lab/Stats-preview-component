@@ -51,20 +51,26 @@ article > p {
   margin-bottom: 3em;
 }
 
-table {
-  border-spacing: 0 0.8em;
+.data-container {
+  display: grid;
+  grid-template-areas:
+    "header1 header2 header3"
+    "data1 data2 data3";
+  gap: 0.8em;
+  letter-spacing: 1px;
 }
 
-table th {
+.data-header {
   font-size: 1.5em;
   text-align: left;
+  font-weight: 700;
 }
 
-th:last-child {
+.upper {
   text-transform: uppercase;
 }
 
-td {
+.data {
   text-transform: uppercase;
   font-size: 0.8em;
   color: hsla(0, 0%, 100%, 0.6);
@@ -74,7 +80,7 @@ span.number {
   font-family: "Inter", sans-serif;
 }
 
-div {
+div.image-wrapper {
   background-image: linear-gradient(
       hsla(273, 100%, 26%, 0.6),
       hsla(273, 100%, 26%, 0.6)
@@ -88,9 +94,69 @@ div {
 @media (max-width: 375px) {
   main {
     flex-direction: column-reverse;
-    width: 370px;
+    width: 350px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+
+  main img {
+    width: 90%;
+  }
+
+  div.image-wrapper {
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.5em;
+  }
+
+  article {
+    padding: 2em;
+    gap: 1em;
+  }
+
+  article > p {
+    padding: 0 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .data-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+      "header1"
+      "data1"
+      "header2"
+      "data2"
+      "header3"
+      "data3";
+  }
+  .header1 {
+    grid-area: header1;
+  }
+
+  .header2 {
+    grid-area: header2;
+  }
+
+  .header3 {
+    grid-area: header3;
+  }
+
+  .data {
+    margin-bottom: 1em;
+  }
+
+  .data1 {
+    grid-area: data1;
+  }
+
+  .data2 {
+    grid-area: data2;
+  }
+
+  .data3 {
+    grid-area: data3;
   }
 }
 
