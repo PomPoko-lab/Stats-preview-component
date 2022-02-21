@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Challenge Results Page](https://www.frontendmentor.io/solutions/stats-preview-responsive-with-flexbox-and-css-grid-QBOWKZsg0)
 - Live Site URL: [Challenge DEMO](https://pompoko-lab.github.io/Stats-preview-component/)
 
 ## My process
