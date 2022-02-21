@@ -91,10 +91,10 @@ div.image-wrapper {
   border-bottom-right-radius: 0.5em;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   main {
     flex-direction: column-reverse;
-    width: 350px;
+    width: 375px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -110,12 +110,12 @@ div.image-wrapper {
   }
 
   article {
-    padding: 2em;
+    padding: 2.5em;
     gap: 1em;
   }
 
   article > p {
-    padding: 0 0.5em;
+    padding: 0 1em;
     margin-bottom: 2em;
   }
 
