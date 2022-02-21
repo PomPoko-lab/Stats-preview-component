@@ -95,6 +95,7 @@ div.image-wrapper {
   main {
     flex-direction: column-reverse;
     width: 375px;
+    max-height: 800px;
     justify-content: center;
     align-items: center;
     text-align: center;
